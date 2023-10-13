@@ -19,8 +19,8 @@ public class SerializationExercises {
             Movie movie1 = new Movie("Batman", 2);
             Movie movie2 = new Movie("Tiburon", 1);
 
-            Session session1 = new Session(80,"14:00",movie1,theater1);
-            Session session2 = new Session(80,"21:00",movie2,theater2);
+            Session session1 = new Session(80, "14:00", movie1, theater1);
+            Session session2 = new Session(80, "21:00", movie2, theater2);
 
 // Serialization;
             Gson gson1 = new Gson();
@@ -58,8 +58,8 @@ public class SerializationExercises {
             Movie movie1 = new Movie("Batman", 2);
             Movie movie2 = new Movie("Tiburon", 1);
 
-            Session session1 = new Session(80,"14:00",movie1,theater1);
-            Session session2 = new Session(80,"21:00",movie2,theater2);
+            Session session1 = new Session(80, "14:00", movie1, theater1);
+            Session session2 = new Session(80, "21:00", movie2, theater2);
 
             try {
                 Gson newGson = new Gson();
@@ -85,21 +85,21 @@ public class SerializationExercises {
 
             }
 
-            try{
+            try {
                 ObjectOutputStream serialized_session = new ObjectOutputStream(new FileOutputStream("C:\\Users\\victo\\Documents\\DOCUMENTOS UNI\\CURSO2\\prueba1.1txt"));
                 serialized_session.writeObject(session1);
                 serialized_session.close();
 
-            }catch (Exception ex){
+            } catch (Exception ex) {
                 ex.printStackTrace();
             }
 
-            try{
+            try {
                 ObjectOutputStream serialized_session = new ObjectOutputStream(new FileOutputStream("C:\\Users\\victo\\Documents\\DOCUMENTOS UNI\\CURSO2\\prueba1.2txt"));
                 serialized_session.writeObject(session2);
                 serialized_session.close();
 
-            }catch (Exception ex){
+            } catch (Exception ex) {
                 ex.printStackTrace();
             }
         }
