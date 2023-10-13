@@ -111,9 +111,9 @@ public class SerializationExercises {
     public static class Exercise3 {
         public static void main(String[] args) {
             try {
-                ObjectInputStream deserializedSession = new ObjectInputStream(new FileInputStream("C:\\Users\\victo\\Documents\\DOCUMENTOS UNI\\CURSO2\\prueba1.1txt"));
-                Session sessionDeserialized = (Session) deserializedSession.readObject();
-                System.out.println(sessionDeserialized);
+                ObjectInputStream deserializedSession1 = new ObjectInputStream(new FileInputStream("C:\\Users\\victo\\Documents\\DOCUMENTOS UNI\\CURSO2\\prueba1.1txt"));
+                Session session1Deserialized = (Session) deserializedSession1.readObject();
+                System.out.println(session1Deserialized);
             } catch (IOException exc) {
                 exc.printStackTrace();
             } catch (ClassNotFoundException exc) {
@@ -121,9 +121,9 @@ public class SerializationExercises {
             }
 
             try {
-                ObjectInputStream deserializedSession = new ObjectInputStream(new FileInputStream("C:\\Users\\victo\\Documents\\DOCUMENTOS UNI\\CURSO2\\prueba1.2txt"));
-                Session sessionDeserialized = (Session) deserializedSession.readObject();
-                System.out.println(sessionDeserialized);
+                ObjectInputStream deserializedSession2 = new ObjectInputStream(new FileInputStream("C:\\Users\\victo\\Documents\\DOCUMENTOS UNI\\CURSO2\\prueba1.2txt"));
+                Session session2Deserialized = (Session) deserializedSession2.readObject();
+                System.out.println(session2Deserialized);
             } catch (IOException exc) {
                 exc.printStackTrace();
             } catch (ClassNotFoundException exc) {
